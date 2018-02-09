@@ -1,4 +1,5 @@
 //Ana lucia Diaz Leppe
+//me ayude con http://www.brackeen.com/vga/basics.html
 long resolY, resolX;
 char currentPage;
 int forceDraw = 0;
@@ -6,9 +7,9 @@ int forceDraw = 0;
 int SVGA(int size, int w, int h){
   resolY = h;
   resolX = w;
-  //https://es.wikipedia.org/wiki/Int_10h
+  
   asm {
-    MOV AX, 4F02H  //stablish svga mode
+    MOV AX, 4F02H  //se estabilizo svga
     MOV BX, [size] //size of screen
     INT 10H        //interrupt screen
   }return 0;
@@ -41,7 +42,6 @@ void setPage(char page){
 }
 
 //http://www.intel-assembler.it/portale/5/programming-vga-card-asm-c/programming-vga-card-asm-c.asp
-//https://courses.engr.illinois.edu/ece390/archive/f97/lecture/svga.txt
 void putPixel(int x, int y, char drawcolor){
   long memoryPosition;
   int pixelOffset;
@@ -94,7 +94,6 @@ void putPixelWidthX(int x, int y, int color, int width) {
 
 // turbo c
 // colors
-// http://www.setha.info/ict-turbocpp/84-ict-turbocpp-0019.html
 char getPixel(int x, int y) {
   long positionMem;
   int offsetPixel;
