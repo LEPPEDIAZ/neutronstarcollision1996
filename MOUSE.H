@@ -1,3 +1,4 @@
+//obtenido de www.brackeen.com/vga/mouse.html
 unsigned int ** bufferMouse;
 
 #define O   12  //outer color mouse
@@ -57,7 +58,6 @@ void mouseShow(int x, int y) {
 }
 
 // get mouse state
-// https://courses.engr.illinois.edu/ece390/books/labmanual/io-devices-mouse.html
 void getMouse(int *mouse_x, int *mouse_y, int *clicked){
   int posx, posy, click_button;
   asm {
