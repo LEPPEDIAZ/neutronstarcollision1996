@@ -1,5 +1,3 @@
-
-//definir todas las variables 
 #define COLOR_FILL_1 0
 #define COLOR_FILL_2 255
 #define MAX_X 800
@@ -8,9 +6,6 @@
 #define y1_Draw 140
 #define x2_Draw 800
 #define y2_Draw 600
-
-#define ACTIVATE_UNDO 1
-
 #define WIDTH1 1
 #define WIDTH2 5
 #define WIDTH3 10
@@ -42,4 +37,4 @@
 #define COLORS_X2 794
 #define COLORS_Y1 29
 #define COLORS_Y2 89
-
+#define ACTIVATE_UNDO 1
