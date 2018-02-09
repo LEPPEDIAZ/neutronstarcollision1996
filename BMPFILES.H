@@ -1,8 +1,8 @@
-/**
+ /**
  * Ana lucia Diaz Leppe
  * Universidad del Valle de Guatemala
  * Paint en C++ y assembler
- * manejador de archivos bmp
+ * manejador de archivos bmp en donde me base en http://www.brackeen.com/vga/bitmaps.html
  */
 typedef struct bmp {
   int width;
