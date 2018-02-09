@@ -1,4 +1,5 @@
 //Ana lucia Diaz Leppe
+//151378
 #include <stdio.h>
 #include <stdlib.h>
 #include <dos.h>
@@ -20,7 +21,7 @@ int redoCounter = 0;
 
 
 void main() {
-  int z, x, y, clicked, xtemp, ytemp, edgesCount;
+  int z, x, y, clicked, xtemp, ytemp, edgesCount; //parametros
   int button, selectedBtn, tempColor, actualColor1, actualColor2;
   int actualWidth, actualPattern;
   int radio, rdX, rdY;
@@ -28,7 +29,7 @@ void main() {
   int sX1, sX2, sY1, sY2;
   char font[58][16*16];
   FILE *fontF;
-  int selectedWidth, colorFill; //select width of line
+  int selectedWidth, colorFill; //seleccionar el grosor de las lineas
   
   BITMAP bitmap;
   //el primer parametro es el modo
@@ -53,30 +54,30 @@ void main() {
   clicked = 0;
   //paintCanvas();
   paintPalette(FULL_PALETTE);
-  colorFill = 1;   //initialize selected color pane
-  actualColor1 = COLOR_FILL_1;  //initialize paint color
-  actualColor2 = COLOR_FILL_2; //initialize paint color
-  actualWidth = 1;  //initialize width
-  actualPattern = 0; //initialize pattern
+  colorFill = 1;   //inicializar el color del panel
+  actualColor1 = COLOR_FILL_1;  //inicializar el color de la pintura
+  actualColor2 = COLOR_FILL_2; 
+  actualWidth = 1;  //inicializar el grosor
+  actualPattern = 0; //inicializar el patron
   while (1) {
     repaintMouse(&x, &y, &clicked, &xtemp, &ytemp);
 
     if (clicked == 1) {
       
-      //LINE BUTTON SELECTED
+      //Linea 
       if (x >= 364 && x <= 391 && y >= 48 && y < 81) {
 	button = LINE;
         
       }
-      //RECTANGLE SELECTED
+      //rectangulo
       if (x >= 326 && x <= 363 && y >= 82 && y <= 118) {
 	button = RECTANGLE;
       } 
-      //CIRCLE CLICKED
+      //circulo
       if (x >= 326 && x <= 363 && y >= 48 && y <= 81) {
 	button = CIRCLE;
       }
-      //ELLIPSE CLICKED
+      //elipse
       if (x >= 364 && x <= 430 && y >= 82 && y <= 118) {
 	button = ELLIPSE;
       }
@@ -85,15 +86,15 @@ void main() {
 	button = POLYGON;
       }
 
-      //CIRCLE PAINT
+      //pintar circulo
       if (x >= 432 && x <= 472 && y >= 41 && y <= 82) {
 	button = PAINT_CIRCLE;
       }
-      //RECTANGLE PAINT
+      //pintar rectangulo
       if (x >= 431 && x <= 472 && y >= 83 && y <= 117) {
 	button = PAINT_RECTANGLE;
       }
-      //OVAL PAINT
+      //pintar ovalo
       if (x >= 473 && x <= 529 && y >= 41 && y <= 82) {
 	button = PAINT_ELLIPSE;
       }
@@ -102,7 +103,7 @@ void main() {
         button = PAINT_POLYGON;
       }
 
-      //PENCIL
+      //lapiz
       if (x >= 2 && x <= 50 && y >= 75 && y <= 171) {
         button = PENCIL;
       }
@@ -112,13 +113,13 @@ void main() {
       //SPRAY TOOL
       if (x >= 109 && x <= 143 && y >= 29 && y <= 82) button = SPRAY;
       
-      //width1
+      //grosor 1
       if (x >= 262 && x <= 314 && y >= 41 && y <= 61) actualWidth = WIDTH1;
-      //width 2
+      //grosor 2
       if (x >= 262 && x <= 314 && y >= 62 && y <= 80) actualWidth = WIDTH2;
-      //width 3
+      //grosor 3
       if (x >= 262 && x <= 314 && y >= 81 && y <= 99) actualWidth = WIDTH3;
-      //width 4
+      //grosor 4
       if (x >= 262 && x <= 314 && y >= 100 && y <= 120) actualWidth = WIDTH4;
 
 
@@ -127,27 +128,27 @@ void main() {
         paintCanvas();
       }
 
-      //ERASER
+      //borrador
       if (x >= 54 && x <= 94 && y >= 32 && y <= 71) {
         button = ERASER;
       }
 
-      //COLOR FILL SELECTED 1
+      //llenar color 
       if (x >= 526 && x <= 565 && y >= 95 && y <= 130) colorFill = 1;
-      //COLOR FILL SELECTED 2     
+      //llenar color 2    
       if (x >= 568 && x <= 620 && y >= 95 && y <= 130) colorFill = 2;
 
       //BUCKET FILL
       if (x >= 2 && x <= 53 && y >= 32 && y <= 74) button = BUCKET;
 
       if (x >= 83 && x <= 123 && y >= 101 && y <= 147) button = TEXT;
-      //SAVE IMAGE
+      //SAVE 
       if (x >= 11 && x <= 36 && y >= 0 && y <= 25) {
         mouseHide(x, y);
         saveImage(0, 140, 800, 460, "paint/image.bmp");
         mouseShow(x, y);
       }
-      //LOAD IMAGE
+      //LOAD 
       if (x >= 52 && x <= 79 && y >= 2 && y <= 23) {
         mouseHide(x, y);
         loadImage(0, 140, "paint/image.bmp", &bitmap);
