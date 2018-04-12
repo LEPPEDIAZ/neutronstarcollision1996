@@ -1,13 +1,10 @@
-# crm Duende 
-> A project to house all the scripts files where we will create a CRM DataBase for Duende store. 
-First Proyect of DataBase Class.
+# Proyecto 4: Graficas por computadora 
+> Puerto de Barcos en donde se encuentra un barco (que se traslada, rota y escala) y carga diferentes cajas, una grua, olas...etc.
 
 > Universidad del Valle de Guatemala 
-> Bases de datos 
+> Graficas por computadora 
 > Primer Ciclo año 2018  
 
-[![NPM Version][npm-image]][npm-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 One to two paragraph statement about your product and what it does.
 
