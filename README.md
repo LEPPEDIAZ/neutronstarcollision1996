@@ -19,7 +19,7 @@ index.html
 ```
 
 ## Controles
-submarino
+##submarino
 mover con mouse ya sea la posicion, grados o tamano. 
   keyboards:
     W: translate
