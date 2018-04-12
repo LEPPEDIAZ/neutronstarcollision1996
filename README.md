@@ -105,9 +105,7 @@ Para poder transportar cajas se describen las siguientes instrucciones
 
 ## Members
 
-* María Mercedes Retolaza Reyna  – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-* Andrea María Cordón Mayén  – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-* Ana Lucía Leppe  – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+* Ana Lucía Leppe  
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
