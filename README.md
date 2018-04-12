@@ -12,17 +12,15 @@ One to two paragraph statement about your product and what it does.
 
 ## Installation
 
-WebGl:open in FireFox con WebGl habilitado
+Open in FireFox con WebGl habilitado
 
 ```sh
 index.html
 ```
 
-## Usage example
+## Controles
+>submarino
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
