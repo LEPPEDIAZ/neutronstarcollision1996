@@ -19,21 +19,18 @@ index.html
 ```
 
 ## Controles
-##submarino
+  ver instrucciones
+## Submarino
 mover con mouse ya sea la posicion, grados o tamano. 
   keyboards:
     W: translate
     E: rotate
     R: Sheer
 
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
 ```sh
-make install
-npm test
+  W: translate
+    E: rotate
+    R: Sheer
 ```
 
 ## Members
