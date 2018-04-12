@@ -12,10 +12,10 @@ One to two paragraph statement about your product and what it does.
 
 ## Installation
 
-Windows:
+WebGl:open in FireFox con WebGl habilitado
 
 ```sh
-edit autoexec.bat
+index.html
 ```
 
 ## Usage example
