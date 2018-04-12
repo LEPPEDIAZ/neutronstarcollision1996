@@ -12,7 +12,7 @@
 
 ## Installation
 
-Open in FireFox con WebGl habilitado
+Open it with FireFox con WebGl habilitado
 
 ```sh
 webgl_proyecto4cranefinalmaster.html
