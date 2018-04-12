@@ -17,6 +17,14 @@ Open it with FireFox con WebGl habilitado
 ```sh
 webgl_proyecto4cranefinalmaster.html
 ```
+Open it with FireFox con WebGl habilitado para obtener camara rotacional
+```sh
+webgl_proyecto4cranefinalmaster-1.html
+```
+Open it with Firefox con WebGl habilitado para obtener camara multiplayer
+```sh
+webgl_proyecto4cranefinalmaster-2.html
+```
 
 ## Controles
   Se describira acontinuacion los siguientes objetos
