@@ -19,7 +19,7 @@ index.html
 ```
 
 ## Controles
-  ver instrucciones
+  Se describira acontinuacion los siguientes objetos
 ## Submarino
 mover con mouse ya sea la posicion, grados o tamano. 
   keyboards:
@@ -32,6 +32,12 @@ mover con mouse ya sea la posicion, grados o tamano.
     E: rotate
     R: Sheer
 ```
+Para poder transportar cajas se describen las siguientes instrucciones
+```sh
+    SHIFT + click: jalar caja a barco
+    double click o clik izquierdo: sacar caja
+```
+
 
 ## Members
 
