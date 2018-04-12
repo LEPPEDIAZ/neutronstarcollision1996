@@ -107,9 +107,10 @@ Para poder transportar cajas se describen las siguientes instrucciones
 
 * Ana Lucía Leppe  
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+## NO FUNCIONA
+  Si el programa no te esta corriendo es porque no lo estas abriendo de la manera correcta. El programa se corrio en FireFox por lo que es necesario tener habilitado Webgl en Firefox. Si no te funciona prueba el siguiente video:
+  https://www.youtube.com/watch?v=IqdMzHSSIZ0
 
-[https://github.com/mretolaza/crmDuende](https://github.com/dbader/)
 
 
 <!-- Markdown link & img dfn's -->
