@@ -15,7 +15,7 @@
 Open in FireFox con WebGl habilitado
 
 ```sh
-index.html
+webgl_proyecto4cranefinalmaster.html
 ```
 
 ## Controles
