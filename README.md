@@ -28,7 +28,7 @@ mover con mouse ya sea la posicion, grados o tamano.
     R: Sheer
 
 ```sh
-  W: translate
+    W: translate
     E: rotate
     R: Sheer
 ```
