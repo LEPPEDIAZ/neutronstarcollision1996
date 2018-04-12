@@ -22,11 +22,7 @@ index.html
   Se describira acontinuacion los siguientes objetos
 ## Submarino
 mover con mouse ya sea la posicion, grados o tamano. 
-  keyboards:
-    W: translate
-    E: rotate
-    R: Sheer
-
+Se muestran a continuacion los siguientes Keyboards:
 ```sh
     W: translate
     E: rotate
