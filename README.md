@@ -107,7 +107,7 @@ Para poder transportar cajas se describen las siguientes instrucciones
 
 ## Members
 
-* Ana Lucía Leppe  
+* Ana Lucía Diaz Leppe  
 
 ## NO FUNCIONA
   Si el programa no te esta corriendo es porque no lo estas abriendo de la manera correcta. El programa se corrio en FireFox por lo que es necesario tener habilitado Webgl en Firefox. Si no te funciona prueba el siguiente video:
