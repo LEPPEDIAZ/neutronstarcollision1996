@@ -102,6 +102,8 @@ Para poder transportar cajas se describen las siguientes instrucciones
 			}
 
 ```
+## Video del proyecto
+  accede a la pagina:
 
 ## Members
 
@@ -110,6 +112,8 @@ Para poder transportar cajas se describen las siguientes instrucciones
 ## NO FUNCIONA
   Si el programa no te esta corriendo es porque no lo estas abriendo de la manera correcta. El programa se corrio en FireFox por lo que es necesario tener habilitado Webgl en Firefox. Si no te funciona prueba el siguiente video:
   https://www.youtube.com/watch?v=IqdMzHSSIZ0
+## AUN NO FUNCIONA: REALIZA UNA CONSULTA
+  correo: dia151378@uvg.edu.gt
 
 
 
