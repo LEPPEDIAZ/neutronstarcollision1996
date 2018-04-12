@@ -20,6 +20,11 @@ index.html
 
 ## Controles
 >submarino
+mover con mouse ya sea la posicion, grados o tamano. 
+  keyboards:
+    W: translate
+    E: rotate
+    R: Sheer
 
 
 ## Development setup
