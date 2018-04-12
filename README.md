@@ -6,7 +6,7 @@
 > Primer Ciclo año 2018  
 
 
-One to two paragraph statement about your product and what it does.
+
 
 ![](header.png)
 
@@ -33,7 +33,75 @@ Para poder transportar cajas se describen las siguientes instrucciones
     SHIFT + click: jalar caja a barco
     double click o clik izquierdo: sacar caja
 ```
+## Animaciones
+  Las animaciones fueron creadas directamente desde WebGl con la grua donde se realizo un parseo desde:
+  https://github.com/rdiankov/collada_robots
+  En donde se creo un Collada Controler y se realizo la info como:
+  ```sh
+    function setupTween() {
 
+				var duration = THREE.Math.randInt( 1000, 5000 );
+
+				var target = {};
+
+				for ( var prop in kinematics.joints ) {
+
+					if ( kinematics.joints.hasOwnProperty( prop ) ) {
+
+						if ( ! kinematics.joints[ prop ].static ) {
+
+							var joint = kinematics.joints[ prop ];
+
+							var old = tweenParameters[ prop ];
+
+							var position = old ? old : joint.zeroPosition;
+
+							tweenParameters[ prop ] = position;
+
+							target[ prop ] = THREE.Math.randInt( joint.limits.min, joint.limits.max )
+
+						}
+
+					}
+
+				}
+
+				kinematicsTween = new TWEEN.Tween( tweenParameters ).to( target, duration ).easing( TWEEN.Easing.Quadratic.Out );
+
+				kinematicsTween.onUpdate( function() {
+
+					for ( var prop in kinematics.joints ) {
+
+						if ( kinematics.joints.hasOwnProperty( prop ) ) {
+
+							if ( ! kinematics.joints[ prop ].static ) {
+
+								kinematics.setJointValue( prop, this[ prop ] );
+
+							}
+
+						}
+
+					}
+
+				} );
+
+				kinematicsTween.start();
+
+				setTimeout( setupTween, duration );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+```
 
 ## Members
 
