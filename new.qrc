@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="backgroud">
+    <file>tiemporun.JPG</file>
+    <file>gradorun.JPG</file>
+    <file>tiempopausa.JPG</file>
+    <file>gradospausa.JPG</file>
+    <file>tiempoactivo.JPG</file>
+    <file>gradoactivo.JPG</file>
+    <file>help.JPG</file>
+    <file>graficacaliente.JPG</file>
+    <file>pausa1.JPG</file>
+    <file>nuevaconsulta.JPG</file>
+    <file>pausa.JPG</file>
+    <file>encendido.JPG</file>
+    <file>boton2.JPG</file>
+    <file>boton.JPG</file>
+    <file>fondopantalla2.JPG</file>
+    <file>blanck.JPG</file>
+  </qresource>
+</RCC>
