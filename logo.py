@@ -9,6 +9,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from main2 import Ui_ProyectoHCI
 from helps import Ui_MainWindow
+from main2 import QLCDCountDown
+from instrucciones import Ui_Main
 import PyQt5.QtMultimedia as M
 import sys
 
@@ -18,7 +20,7 @@ class Ui_Logo(object):
     
     def openWindow(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_ProyectoHCI()
+        self.ui = Ui_Main()
         self.ui.setupUi(self.window)
         MainWindow.hide()
         self.window.show()

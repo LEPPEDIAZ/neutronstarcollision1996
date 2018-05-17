@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Wed May 16 18:13:43 2018
+
+@author: Ana Lucia Diaz Leppe
+"""
+
+# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'mainwindow2.ui'
 #
@@ -61,7 +68,6 @@ def init_serial():
 init_serial()
 # -----------------------------------------------------------------------------
 """
-
 class QLCDCountDown(QLCDNumber):
 
 
@@ -77,8 +83,6 @@ class QLCDCountDown(QLCDNumber):
         super(QLCDCountDown, self).__init__(parent=None, *args)
 
         self.parent, self.timer, self.palete = parent, QTimer(self), QPalette()
-        self.setGeometry(10, 10, 170, 70)
-
 
         self.setNumDigits(5)
 
@@ -103,44 +107,6 @@ class QLCDCountDown(QLCDNumber):
         else:
 
             self.display("0" * 24)
-
-
-
-    def seconds_time_to_human_string(self, time_on_seconds=0):
-
-        """Calculate time, with precision from seconds to days."""
-
-        minutes, seconds = divmod(int(time_on_seconds), 60)
-
-        hours, minutes = divmod(minutes, 60)
-
-        days, hours = divmod(hours, 24)
-
-        human_time_string = ""
-
-        if days:
-
-            human_time_string += "%02dD " % days
-
-        if hours:
-
-            human_time_string += "%02d" % hours
-
-        else:
-
-            human_time_string += "00"
-
-        if minutes:
-
-            human_time_string += ":%02d" % minutes
-
-        else:
-
-            human_time_string += ":00"
-
-        human_time_string += ":%02d" % seconds
-
-        return human_time_string
 
 
 
@@ -336,6 +302,9 @@ class Ui_ProyectoHCI(object):
         self.timenumber.setStyleSheet("border-image: url(:/backgroud/blanck.JPG);\n"
 "font: 36pt \"MS Shell Dlg 2\";")
         self.timenumber.setObjectName("lcdNumber2")
+        self.timer, QTimer(self)
+        self.setNumDigits(14)
+        
         #self.timer.clicked.connect(self._update)
         #self.timer = QTimer()
         #self.timer.timeout.connect(self._update)
@@ -480,8 +449,6 @@ class Ui_ProyectoHCI(object):
         self.progressBar.raise_()
         self.oktemperatura.raise_()
         self.oktemperatura_2.raise_()
-        gui2 = QLCDCountDown(None, None, datetime.strptime('Jun 2020', '%b %Y'))
-        gui2.show()
         
     def nuevac(self):
         self.gradoinactivo.raise_()
@@ -544,11 +511,11 @@ if __name__ == "__main__":
 
     #gui1 = QLCDDateTime(None)
 
-    #gui2 = QLCDCountDown(None, None, datetime.strptime('Jun 2020', '%b %Y'))
+    gui2 = QLCDCountDown(None, None, datetime.strptime('Jun 2020', '%b %Y'))
 
     #gui1.show()  # date and time
 
-    #gui2.show()  # count down
+    gui2.show()  # count down
     ProyectoHCI = QtWidgets.QMainWindow()
     #yo anadi pprint
     pprint("input parameters = " + str(sys.argv))
@@ -556,4 +523,3 @@ if __name__ == "__main__":
     ui.setupUi(ProyectoHCI)
     ProyectoHCI.show()
     sys.exit(app.exec_())
-
